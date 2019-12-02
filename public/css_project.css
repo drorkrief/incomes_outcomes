@@ -1,0 +1,190 @@
+*{
+    font-family: Open Sans;
+    padding: 0;
+    margin: 0;
+}
+#incomeDiv{
+    position: absolute;
+    width: 40%;
+    left: 6vw;
+    /* float: left; */
+}
+#outcomeDiv{
+    position: absolute;
+    width: 40%;
+    right: 4vw;
+}
+#incomeList li,#outcomeList li{
+height: 35px;
+border-top: rgba(128, 128, 128, 0.698) 1px solid;
+line-height: 35px;
+position: relative;
+
+
+}
+#incomeList .amount_income{
+    color: #33A9A4;
+}
+#outcomeList span:nth-child(2){
+    color: #F4373B;
+}
+
+li button{
+    border: none;
+    color: red;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size:larger;
+    
+}
+.amount_income{
+    background-color: inherit;
+    z-index: 2;
+    position: absolute;
+    right: 4px;
+    transition: right 300ms;
+    height: 30px;
+    top: 1px;
+}
+.list1:hover > .amount_income{
+    right: 30px;
+}
+#incomeList li:nth-last-child(1), #outcomeList li:nth-last-child(1){
+    border-bottom: rgba(128, 128, 128, 0.698) 1px solid;
+}
+#incomeList li:nth-child(odd),#outcomeList li:nth-child(odd){
+    background-color: white;
+}
+
+#incomeList li:nth-child(even),#outcomeList li:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#bodyDiv{
+    margin-top: 40px;
+    position: relative;
+}
+
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+#totalIncom{
+    position: absolute;
+    right: 7vw;
+    top: 13px;
+    color: white;
+}
+#totalOutcom{
+    position: absolute;
+    right: 7vw;
+    top: 10px;
+    color: white;
+}
+#iconCheck{
+    vertical-align: -6px;
+    font-size: 30px;
+}
+#amount{
+    width: 150px;
+}
+#description{
+    width: 300px;
+}
+#typeValue{
+    /* vertical-align: -1px; */
+    height: 30px;
+    width: 40px;
+}
+#top{
+    height: 270px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/05/21/21/27/thunderstorm-4220199_1280.jpg');
+}
+div{
+    width: 100%;
+}
+#checkButton{
+    font-size: 22px;
+    background-color: lightgray;
+    border: none;
+}
+#bar{
+    padding-top: 10px;
+    height: 45px;
+    background-color: lightgray;
+}
+#bar :first-child{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.input{
+    /* margin-top: 7px; */
+    border-radius: 3px;
+    height: 30px;
+    border: none;
+    
+}
+
+h3 :nth-child(3){
+    width: 70px;
+}
+ul{
+    list-style-type: none;
+}
+#totalPercent{
+    vertical-align: -1px;
+    margin-left: 20px;
+    background-color:rgb(241, 142, 142);
+    border-radius: 5px;
+    height: 24px;
+    width: 35px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    right: 2vw;
+    top: 10px;
+}
+#itemPrecent{
+    background-color:rgb(241, 142, 142);
+    border-radius: 5px;
+    height: 24px;
+    width: 35px;
+    text-align: center;
+
+}
+#outcom{
+    padding-top: 15px;
+    background-color:#F4373B;
+    width:300px;
+    border-radius: 2px;
+    margin-bottom: 55px;
+    height: 30px;
+    color: black;
+    text-align:left ;
+    position: relative;
+
+}
+/* #amount_left{
+    float: right;
+} */
+#incom{
+    padding-top: 15px;
+    text-align:left ;
+    background-color: #33A9A4;
+    width:300px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    height: 30px;
+    color: black;
+    position: relative;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css_project.css">
+    <title>project</title>
+</head>
+
+<body>
+    <div id="top">
+        <div style="height: 50px;"></div>
+        <h2 class="header"></h2>
+        <div style="height: 20px;"></div>
+
+        <h1 id="total" class="header">total</h1>
+        <span class="header" id="incom">&nbsp; &nbsp;INCOME: <span id="totalIncom"> +0.00</span></span>
+        <span class="header" id="outcom">&nbsp; &nbsp;EXPENSES: <span id="totalOutcom"> -0.00</span><span
+                id="totalPercent"></span></span>
+    </div>
+    <div id="bar">
+        <h3 id="secondHeader">
+            <select class="input" name="type" id="typeValue">
+                <option value="plus">+</option>
+                <option value="minus">-</option>
+            </select>
+            <input id="description" placeholder="&nbsp; &nbsp;add description" class="input" type="text">
+            <input id="amount" placeholder="&nbsp; &nbsp;value" class="input" type="number">
+            <button id="checkButton"><i id="iconCheck"  class="far fa-check-circle"></i>
+            </button>
+
+        </h3>
+    </div>
+    <div id="bodyDiv">
+        <div id="incomeDiv">
+            <h3 style="color: #33A9A4;">INCOME</h3>
+            <ul id="incomeList">
+            </ul>
+        </div>
+        <div id="outcomeDiv">
+                <h3 style="color: #F4373B"> EXPENSES</h3>
+                <ul id="outcomeList">
+                </ul>
+            </div>
+    </div>
+    <!-- <div style="height: 100px;width: 50%;display: inline-block"> -->
+       
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/js_project.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

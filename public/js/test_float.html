@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* .divUp:hover{display: block;} */
+        .divUp:hover .divDown {
+            background-color: yellow;
+            display: none;
+        }
+
+        #wrapper_all {
+            left: 0;
+            position: absolute;
+        }
+
+        #wrapper {
+            width: 204px;
+            direction: rtl;
+            
+        }
+        #div1:hover #div2{
+/* display: inline-block; */
+background-color: yellowgreen;
+        }
+        #div1 {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        #div2 {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            display: inline-block;
+            /* display: none; */
+        }
+
+        .divDown {
+            transition: display 6s;
+
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            border: blue 1px solid;
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            text-align: center;
+
+        }
+
+        .divUp {
+            border: rebeccapurple 1px solid;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper_all">
+        <div id="wrapper">
+            <div id="div1">div1</div>
+            <div id="div2">div2</div>
+        </div>
+    </div>
+    <div style="height: 200px;"></div>
+    <h1>vertical alignment</h1>
+    <div class="divUp">
+        <div class="divDown">dror</div>
+    </div>
+    <div class="divUp">
+        <div class="divDown">dror</div>
+    </div>
+    <div class="divUp">
+        <div class="divDown">dror</div>
+    </div>
+    <div class="divUp">
+        <div class="divDown">dror</div>
+    </div>
+</body>
+
+</html>
